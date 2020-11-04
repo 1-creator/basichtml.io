@@ -1,0 +1,106 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+*{
+    box-sizing: border-box;
+}
+body{
+  min-width:290px;
+line-height: 1.7em;
+position: relative;
+margin-left:0;
+}
+
+#navbar{
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    top:0;
+    width:300px;
+    border-right:  solid black;
+    height: 100%;   
+    line-height:2.5em;
+}
+
+#navbar ul{
+    list-style-type: none;
+ padding-left:0;
+  height: 80%;
+    overflow-y: auto;
+}
+
+#navbar li{
+border:  1px solid rgb(184, 177, 177);
+padding-left:20px;
+border-bottom-width:0;
+}
+
+#navbar header{
+    margin:20px;
+    text-align: center;
+}
+
+#navbar a{
+    color:black;
+    text-decoration:none;
+    font-size: 15px; 
+}
+
+#nav-bar a:hover{
+color: rgb(165, 40, 40);
+}
+header{
+    font-size: 30px;
+}
+#main-doc{
+    font-family: Arial, Helvetica, sans-serif;
+   position: absolute;
+   margin-left:330px;
+   min-width: 300px;
+}
+
+.main-section{
+    padding-top:10px;
+    margin-bottom: 30px;
+}
+span{
+    color:rgb(32, 218, 79);
+    background-color:black;
+    padding:2px;
+    border-radius: 3px;
+
+}
+.code-container{
+     background:linear-gradient(#eee,#fe9);
+    color:green; 
+     padding: 15px;
+   border-radius: 3px;  
+}
+.result-tag{
+    font-size: 20px;
+    width:16%;
+    color:  rgb(165, 40, 40)
+}
+
+
+@media only screen and (min-width:700px){
+     #main-doc{
+         font-size: 15px;
+     }
+    }
+
+@media only screen and (max-width:700px){
+   
+      #main-doc{
+          font-size: 13px;
+          margin: 10px;
+      }
+      #navbar{
+        position: relative;
+        width:100%;
+        border-right: none;
+       
+    }
+    #navbar ul{
+        border: 2px solid black;
+        height: 200px;
+    }
+}

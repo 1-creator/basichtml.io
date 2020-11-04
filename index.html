@@ -1,0 +1,303 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="technical-documentation">
+    <link rel="stylesheet" href="htmltechnicaldoc.css">
+   
+    <title>html documentation</title>
+</head>
+<body>
+ <nav id="navbar">
+     <header>Basic HTML5</header>
+     <ul>
+<a class="nav-link" href="#Introduction"><li>Introduction</li></a>
+<a class="nav-link" href="#Declaring_the_Doctype_of_an_HTML_document"><li>Declaring the Doctype of an HTML document</li></a>
+<a class="nav-link" href="#Define_the_head_and_body_of_an_HTML_document"><li>Define the head and body of an HTML document</li></a>
+<a class="nav-link" href="#comment_out_HTML"><li>comment out HTML</li></a>
+<a class="nav-link" href="#Defining_headings"><li>Defining headings</li></a>
+<a class="nav-link" href="#Create_a_paragraph"><li>Create a paragraph</li></a>
+<a class="nav-link" href="#Creating_links"><li>Creating links</li></a>
+<a class="nav-link" href="#Create_an_ordered_list"><li>Create an ordered list </li></a>
+<a class="nav-link" href="#Create_a_bulleted_unordered_list"><li>Create a bulleted unordered list</li></a>
+<a class="nav-link" href="#Add_images_to_your_websites"><li>Add images to your websites</li></a>
+<a class="nav-link" href="#References"><li>References</li></a>
+    </ul>
+ </nav>
+<main id="main-doc">
+
+<section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <p>HTML is the standard markup language for creating Web pages.</p>
+    <ul>
+        <li>HTML stands for Hyper Text Markup Language</li>
+        <li>HTML describes the structure of Web pages using markup</li>
+        <li>HTML elements are the building blocks of HTML pages</li>
+        <li>HTML elements are represented by tags</li>
+        <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+        <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+    </ul>
+    <p>Most HTML elements have an <span>opening tag</span>  and a <span>closing tag</span>.</p>
+    <p>Opening tags look like this:</p>
+    <span>&lt;h1&gt;</span>
+    <p>Closing tags look like this:</p>
+    <span>&lt;/h1&gt;</span>
+    <p>The only difference between opening and closing tags is the forward slash after the opening bracket of a closing tag.</p>
+    <p>Example of an HTML <span>element</span></p>
+    <code>
+        <div class="code-container">
+                &lt;h1&gt;Hello&lt;/h1&gt;
+                 <p class="result-tag">Result;</p>
+                 <h1>Hello</h1>
+        </div>
+    </code>
+
+</section>
+
+<section class="main-section" id="Declaring_the_Doctype_of_an_HTML_document">
+    <header>Declaring the Doctype of an HTML document</header>
+    <p>At the top of your document, you need to tell the browser which version of HTML your page is using. 
+        HTML is an evolving language, and is updated regularly. Most major browsers support the latest specification, which is HTML5. 
+        However, older web pages may use previous versions of the language.</p>
+      <ul>
+          <li>You tell the browser this information by adding the <span> &lt;!DOCTYPE ...&gt;</span> tag on the first line, 
+          where the <span> "..."</span> part is the version of HTML. For HTML5, you use <span>&lt;!DOCTYPE html&gt;</span>.</li>
+          <li>The <span>!</span> and uppercase <span> DOCTYPE</span> is important, especially for older browsers. The html is not case sensitive.</li>
+          <li>Next, the rest of your HTML code needs to be wrapped in html tags. 
+           The opening <span> &lt;html&gt;</span> goes directly below the &lt;!DOCTYPE html&gt; line, and the closing <span> &lt;/html&gt;</span> goes at the end of the page.</li>
+      </ul>
+      <p>Here's an example of the page structure:</p>
+      <code>
+        <div class="code-container">
+            &lt;!DOCTYPE html&gt;
+                <br>
+            &lt;html&gt;
+                <br>
+            &lt;!-- Your HTML code goes here --&gt;
+                  <br>
+            &lt;/html&gt;
+        </div>
+      </code>
+</section>
+<section class="main-section" id="Define_the_head_and_body_of_an_HTML_document">
+    <header>Define the head and body of an HTML document</header>
+    <p>You can add another level of organization in your HTML document within the <span>html</span> tags with the <span>head</span> and <span> body</span> elements. 
+        Any markup with information about your page would go into the <span>head</span> tag. 
+        Then any markup with the content of the page (what displays for a user) would go into the <span>body</span> tag.</p>
+        <ul>
+            <li>Metadata elements, such as <span>link</span>, <span>meta</span>, <span>title</span>, and <span>style</span>, typically go inside the <span> head</span> element.</li>
+        </ul>
+        <p>Here's an example of a page's layout:</p>
+        <code>
+            <div class="code-container">
+                 &lt;!DOCTYPE html&gt;
+                    <br>
+                 &nbsp;&nbsp;&lt;html&gt;
+                    <br>
+                 &nbsp;&nbsp; &lt;head&gt;
+                     <br>
+                 &nbsp;&nbsp; &lt;!-- metadata elements --&gt;
+                     <br>
+                 &nbsp;&nbsp; &lt;/head&gt;
+                     <br>
+                 &nbsp;&nbsp; &lt;body&gt;
+                     <br>
+                 &nbsp;&nbsp; &lt;!-- page contents --&gt;
+                     <br>
+                 &nbsp;&nbsp;&lt;/body&gt;
+                     <br>
+                 &lt;/html&gt;
+            </div>
+        </code>
+</section>
+<section class="main-section" id="comment_out_HTML">
+    <header>comment out HTML</header>
+     <p>Commenting is a way that you can leave comments for other developers within your code without 
+        affecting the resulting output that is displayed to the end user.</p>
+        <ul>
+            <li>Commenting is also a convenient way to make code inactive without having to delete it entirely.</li>
+            <li>Comments in HTML starts with <span> &lt;!--</span>, and ends with a <span> --&gt;</span></li>
+        </ul>
+        <code>
+            <div class="code-container">
+                &lt;!-- your comment goes here --&gt;
+            </div>
+        </code>
+</section>
+<section class="main-section" id="Defining_headings">
+    <header>Defining headings</header>
+    <p>This element tells the browser about the structure of your website. 
+       <span>h1</span> elements are often used for main headings, while <span>h2</span> elements are generally used for subheadings. 
+        There are also <span> h3</span>, <span>h4</span>, <span>h5</span> and <span>h6</span> elements to indicate different levels of subheadings.</p>
+        <code>
+            <div class="code-container">
+        &lt;h1&gt; heading 1 &lt;/h1&gt;
+        <br>
+        &lt;h2&gt; heading 2 &lt;/h2&gt;
+        <br>
+        &lt;h3&gt; heading 3 &lt;/h3&gt;
+        <br>
+        &lt;h4&gt; heading 4 &lt;/h4&gt;
+        <br>
+        &lt;h5&gt; heading 5 &lt;/h5&gt;
+        <br>
+        &lt;h6&gt; heading 6 &lt;/h6&gt;
+
+        <p class="result-tag">Result;</p>
+        <h1> heading 1 </h1> 
+<h2> heading 2 </h2> 
+<h3> heading 3 </h3> 
+<h4> heading 4 </h4> 
+<h5> heading 5 </h5> 
+<h6> heading 6 </h6>
+            </div>
+
+        </code>
+</section>
+<section class="main-section" id="Create_a_paragraph">
+    <header>Create a paragraph</header>
+       <p><span>p</span> elements are the preferred element for paragraph text on websites. <span>p</span> is short for "paragraph".</p>
+        <p>You can create a paragraph element like this:</p>
+<code> 
+   <div class="code-container">
+     &lt;p&gt;I'm a p tag!&lt;/p&gt;
+    <p class="result-tag">Result;</p>
+        <p>I'm a p tag!</p>
+     </div>
+    </code>
+</section>
+<section class="main-section" id="Creating_links">
+        <header>Creating links</header>
+        <p>You can use <span>anchor(a)</span> elements to link to content outside of your web page.</p>
+        <p><span>anchor</span> elements need a destination web address called an <span>href</span> attribute. They also need anchor text. Here's an example:</p>
+        <div class="code-container">
+        <code>
+            &lt;a href="https://freecodecamp.org"&gt;this links to freecodecamp.org &lt;/a&gt;
+            <p class="result-tag">Result;</p>
+        <a href="https://freecodecamp.org">this links to freecodecamp.org </a>
+        </code> 
+        </div>  
+        <p>Then your browser will display the text <span> "this links to freecodecamp.org"</span>    as a link you can click. 
+        And that link will take you to the web address <span> https://www.freecodecamp.org.</span></p>
+</section>
+<section class="main-section" id="Create_an_ordered_list">
+    <header>Create an ordered list</header>
+    <p>HTML has another special element for creating <span>ordered lists</span>, or numbered lists.</p>
+    <p>Ordered lists start with an opening <span>&lt;ol&gt;</span> element, followed by any number of <span> &lt;li&gt;</span> elements. Finally, ordered lists close with a <span> &lt;/ol&gt;</span></p>
+    <p>For example;</p>
+    <code>
+       
+        <div class="code-container">
+          &lt;ol&gt;
+          <br>
+          &lt;li>Garfield&lt;/li&gt;
+            <br>
+          &lt;li>Sylvester&lt;/li&gt;
+            <br>
+          &lt;/ol&gt;
+          <p class="result-tag">Result;</p>
+          <ol> 
+                  <li>Garfield</li> 
+                  <li>Sylvester</li> 
+                  </ol>
+        </div>  
+        </code>
+</section>
+<section class="main-section" id="Create_a_bulleted_unordered_list">
+    <header>Create a bulleted unordered list</header>
+        
+            <p>HTML has a special element for creating <span> unordered lists</span>, or bullet point style lists.</p>
+            <p>Unordered lists start with an opening <span> &lt;ul&gt;</span> element, followed by any number of <span> &lt;li&gt;</span> elements. 
+             Finally, unordered lists close with a <span>&lt;/ul&gt;</span></p>
+        <code>
+            <div class="code-container">
+                 &lt;ul&gt;
+                 <br>
+                 &lt;li&gt;milk&lt;/li&gt; 
+                 <br>
+                 &lt;li&gt;cheese&lt;/li&gt;
+                 <br>
+                 &lt;/ul&gt;
+        <p class="result-tag">Result;</p>
+                 <ul>
+                <li>milk</li>   
+                <li>cheese</li>
+                     </ul>
+            </div>
+        </code>
+    
+</section>
+<section class="main-section" id="Add_images_to_your_websites">
+    <header>Add images to your websites</header>
+    <p>You can add images to your websites by using the <span>img</span> element, and point to a specific image's URL using the <span>src</span> attribute.</p>
+<p>An example of this would be:</p>
+<code>
+    <div class="code-container">
+            &lt;img src="https://www.your-image-source.com/your-image.jpg"&gt;
+    </div>
+</code>
+<p>Note that <span>img</span> elements are self-closing.</p>
+<p>All <span>img</span> elements <strong>must</strong> have an <span>alt</span> attribute. The text inside an <span>alt</span> attribute is used for screen readers 
+    to improve accessibility and is displayed if the image fails to load.</p>
+    <p><strong>Note</strong>: If the image is purely decorative, using an empty <span>alt</span> attribute is a best practice.</p>
+    <p>Ideally the <span>alt</span> attribute should not contain special characters unless needed.</p>
+    <code>
+<div class="code-container">
+&lt;img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."&gt;
+      <p class="result-tag">Result;</p>
+     <img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back.">
+      </div>
+       
+
+    </code>
+
+
+</section>
+
+<section class="main-section" id="References">
+    <header>References</header>
+    <p>All the documentation in this page is taken from <a href="https://www.freecodecamp.org/">freecodecamp</a> 
+        and <a href=https://www.w3schools.com/html/html_intro.asp>w3schools</a></p>
+</section>
+
+</main>
+    
+</body>
+</html>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
